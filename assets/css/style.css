@@ -504,7 +504,7 @@ label {
     position: fixed;
     top: 0;
     left: -100%;
-    width: 100%;
+    width: 50%;
     height: 100%;
     z-index: 10;
     padding: .8rem;

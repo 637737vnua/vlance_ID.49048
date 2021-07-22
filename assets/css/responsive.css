@@ -2,4 +2,8 @@
     .info-bank {
         max-width: 95%;
     }
+    
+    .table-info-show {
+        width: 100%;
+    }
 }

@@ -152,13 +152,13 @@
                     </div>
                 </label>
                 <input hidden type="checkbox" name="" id="show-booking">
-                <div class="overlay"></div>
+                <div class="overlay"></div >
                 <div class="table-info-show">
                     <div class="nav">
                         <div class="title">Booking</div>
                         <label class="btn-close" for="show-booking">X</label>
                     </div>
-                    <div class="col-md-6 mt-4">  
+                    <div class="col-md-12 mt-4">  
                         <form method="post" class="site-form" action="<?php echo base_url('book-appointment/'.html_escape($user->slug)); ?>">
             
                             <div class="row"><!-- Row -->
@@ -224,16 +224,16 @@
                         <label class="btn-close" for="show-contact-now">X</label>
                     </div>
                     <!-- form contact  -->
-                    <div class="col-md-6 mt-3">  
+                    <div class="col-md-12 mt-3">  
                         <div class="contact-form">
                             <form method="post" class="site-form" action="<?php echo base_url('send-message'); ?>">
                                 <div class="row">
-                                    <div class="col-md-6">
+                                    <div class="col-md-12">
                                         <div class="form-group">
                                             <input class="form-control" type="input" name="name" placeholder="Name">
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-md-12">
                                         <div class="form-group">
                                             <input class="form-control" type="input" name="email" placeholder="E-mail" required>
                                         </div>
