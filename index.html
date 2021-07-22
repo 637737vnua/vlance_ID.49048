@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Thông tin cá nhân</title>
+</head>
+<body>
+    <div id="profile">
+        <div class="backgroud-profile" style="background-image: url('https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');">
+            <div class="btn-menu">
+                <label class="btn-menu__img" for="menudrop-1">
+                    <img src="./assets/images/menu_icon.png" alt="">
+                </label>
+                <input type="checkbox" hidden name="" class="menudrop" id="menudrop-1">
+                <div class="menu-dropdown header">
+                    <div class="menu-dropdown__item">
+                        item 1
+                    </div>
+                    <div class="menu-dropdown__item">
+                        item 2
+                    </div>
+                    <div class="menu-dropdown__item">
+                        item 3
+                    </div>
+                </div>
+            </div>
+            <div class="contact-header">
+                <div class="avatar">
+                    <img src="https://images.pexels.com/photos/1382731/pexels-photo-1382731.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                </div>
+                <div class="btn btn-qr">
+                    Tải QR
+                </div>
+                <div class="user-name">
+                    <div class="full-name">
+                        Nguyễn Minh Cường
+                        <div class="line">
+                            <img src="./assets/images/line1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="nick-name">
+                        <small>Have a nice day ♪ ♫</small>
+                    </div>
+                </div>
+                <div class="contact-control-header row">
+                    <div class="btn btn-action-header col l-6 m-6 c-6">
+                        <div class="icon">
+                            <img src="./assets/images/phone_icon.png" alt="">
+                        </div>
+                        <div class="title">Gọi điện</div>
+                    </div>
+                    <div class="btn btn-action-header col l-6 m-6 c-6">
+                        <div class="icon">
+                            <img src="./assets/images/phone-book_icon.png" alt="">
+                        </div>
+                        <div class="title">Lưu số</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="other-info row">
+            <div class="item-info col l-6 m-6 c-6">
+                <a href="" class="btn btn-info-contact" > 
+                    <div class="icon">
+                        <img src="./assets/images/fb_logo.png" alt="">
+                    </div>
+                    <div class="text">
+                        Facebook
+                    </div>
+                </a>
+            </div>
+            <div class="item-info col l-6 m-6 c-6">
+                <a href="" class="btn btn-info-contact" > 
+                    <div class="icon">
+                        <img src="./assets/images/zalo_logo.png" alt="">
+                    </div>
+                    <div class="text">
+                        Zalo
+                    </div>
+                </a>
+            </div>
+            <div class="item-info col l-6 m-6 c-6">
+                <a href="" class="btn btn-info-contact" > 
+                    <div class="icon">
+                        <img src="./assets/images/tiktok_logo.png" alt="">
+                    </div>
+                    <div class="text">
+                        Tiktok
+                    </div>
+                </a>
+            </div>
+            <div class="item-info col l-6 m-6 c-6">
+                <a href="" class="btn btn-info-contact"> 
+                    <div class="icon">
+                        <img src="./assets/images/yt_logo.png" alt="">
+                    </div>
+                    <div class="text">
+                        Youtube
+                    </div>
+                </a>
+            </div>
+            <div class="item-info col l-12 m-12 c-12">
+                <label class="btn btn-info-contact style-2" for="show-info-bank"> 
+                    <div class="icon ic-style-2">
+                        <img src="./assets/images/bank_icon.png" alt="">
+                    </div>
+                    <div class="text ml-3 text-left">
+                        Xem tài khoản ngân hàng
+                    </div>
+                </label>
+                <input type="checkbox" hidden name="" id="show-info-bank">
+                <div class="overlay"></div>
+                <!-- table info bank -->
+                <div class="info-bank">
+                    <div class="nav">
+                        <div class="title">Bank Info</div>
+                        <label class="btn-close" for="show-info-bank">X</label>
+                    </div>
+                    <div class="table-info-bank">
+                        <div class="name-bank">
+                            <div class="icon">
+                                <img src="./assets/images/VCbank_icon.jpg" alt="">
+                            </div>
+                            <div class="text">Vietcombank</div>
+                        </div>
+                        <div class="bg-content name-user">
+                            Nguyễn Quang Hưng
+                        </div>
+                        <div class="bg-content number-bank">
+                            <span>STK: <span id="number-bank">11199955777</span></span>
+                            <div class="btn-copy">
+                                <img id="img-copy" src="./assets/images/icon_coppy.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-info col l-12 m-12 c-12">
+                <label href="" class="btn btn-info-contact style-2" for="show-booking"> 
+                    <div class="icon ic-style-2">
+                        <img src="./assets/images/booking_icon.png" alt="">
+                    </div>
+                    <div class="text ml-3 text-left">
+                        Book lịch
+                    </div>
+                </label>
+                <input hidden type="checkbox" name="" id="show-booking">
+                <div class="overlay"></div>
+                <div class="table-info-show">
+                    <div class="nav">
+                        <div class="title">Booking</div>
+                        <label class="btn-close" for="show-booking">X</label>
+                    </div>
+                    <div class="col-md-6 mt-4">  
+                        <form method="post" class="site-form" action="<?php echo base_url('book-appointment/'.html_escape($user->slug)); ?>">
+            
+                            <div class="row"><!-- Row -->
+            
+                                <div class="col-md-12 col-sm-12"><!-- Name input -->
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="title" placeholder="Appointment Title" required>
+                                    </div>
+                                </div>
+            
+            
+                                <div class="col-md-12 col-sm-12"><!-- Email input -->
+                                    <div class="form-group">
+                                        <div class='input-group date' id=''>
+                                          <input type='date' name="book_time" class="form-control datetimepicker1" placeholder="DD/DD/YYYY" autocomplete="off" required />
+                                          <span class="input-group-addon">
+                                              <span class="icon-calendar">
+                                              </span>
+                                          </span>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="col-md-12 col-sm-12"><!-- Email input -->
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" name="email" placeholder="Email" required>
+                                    </div>
+                                </div>
+            
+                                <div class="col-md-12 col-sm-12"><!-- message input -->
+                                    <div class="form-group">
+                                        <textarea class="form-control" name="details" placeholder="Enter message here"></textarea>
+                                    </div>
+                                </div>
+            
+            
+                            </div><!-- Row end -->
+            
+                            <!-- csrf token -->
+                            <input type="hidden" name="<?php echo $this->security->get_csrf_token_name();?>" value="<?php echo $this->security->get_csrf_hash();?>">
+                            <input type="hidden" name="user_id" value="<?php echo html_escape($user->id) ?>">
+            
+                            <input type="submit" name="submit" id="submit" value="Send Message" class="btn btn-primary pull-left"><!-- Send Button -->
+            
+                        </form>
+                    </div>  
+                </div>
+            </div>
+            <div class="item-info col l-12 m-12 c-12">
+                <label href="" class="btn btn-info-contact style-2" for="show-contact-now"> 
+                    <div class="icon ic-style-2">
+                        <img src="./assets/images/contact_icon.png" alt="">
+                    </div>
+                    <div class="text ml-3 text-left">
+                        Liên hệ nhanh
+                    </div>
+                </label>
+                <input hidden type="checkbox" name="" id="show-contact-now">
+                <div class="overlay"></div>
+                <div class="table-info-show">
+                    <div class="nav">
+                        <div class="title">Contact now</div>
+                        <label class="btn-close" for="show-contact-now">X</label>
+                    </div>
+                    <!-- form contact  -->
+                    <div class="col-md-6 mt-3">  
+                        <div class="contact-form">
+                            <form method="post" class="site-form" action="<?php echo base_url('send-message'); ?>">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input class="form-control" type="input" name="name" placeholder="Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input class="form-control" type="input" name="email" placeholder="E-mail" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 top_25">
+                                        <div class="form-group">
+                                            <textarea class="form-control" name="message" placeholder="Message" rows="8" required></textarea>
+                                        </div>
+                                    </div>
+                                    <!-- csrf token -->
+                                    <input type="hidden" name="<?php echo $this->security->get_csrf_token_name();?>" value="<?php echo $this->security->get_csrf_hash();?>">
+            
+                                    <div class="col-md-12 top_15 bottom_30">
+                                        <input type="hidden" name="user_id" value="<?php echo html_escape($user->id) ?>">
+                                        <button class="btn btn-primary" type="submit"><i class="fa fa-paper-plane"></i> Send</button>
+                                    </div>
+                                </div>
+                            </form>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="services">
+            <section class="services-item">
+                <div class="title-context right">
+                    <div class="content">
+                        <div class="icon"></div>
+                        <div class="title ml-3">Dịch vụ - Services</div>
+                    </div>
+                </div>
+                <div class="contents-item">
+                    <div class="list-sercives">
+                        <div class="list-item">
+                            <div class="list-item__img">
+                                <img src="https://images.pexels.com/photos/598917/pexels-photo-598917.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                            </div>
+                            <div class="list-item__title">
+                                Dịch vụ chụp hình
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div class="list-item__img">
+                                <img src="https://images.pexels.com/photos/598917/pexels-photo-598917.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                            </div>
+                            <div class="list-item__title">
+                                Dịch vụ chụp hình
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div class="list-item__img">
+                                <img src="https://images.pexels.com/photos/598917/pexels-photo-598917.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                            </div>
+                            <div class="list-item__title">
+                                Dịch vụ chụp hình
+                            </div>
+                        </div><div class="list-item">
+                            <div class="list-item__img">
+                                <img src="https://images.pexels.com/photos/598917/pexels-photo-598917.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                            </div>
+                            <div class="list-item__title">
+                                Dịch vụ chụp hình
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="services-item">
+                <div class="title-context left">
+                    <div class="content">
+                        <div class="control-album">
+                            <div class="btn-show show-album">
+                                <label for="menudrop-2">
+                                    Danh mục
+                                </label>
+                                <input type="checkbox" name="" hidden class="menudrop" id="menudrop-2">
+                                <div class="menu-dropdown">
+                                    <div class="menu-dropdown__item">
+                                        item 1
+                                    </div>
+                                    <div class="menu-dropdown__item">
+                                        item 2
+                                    </div>
+                                    <div class="menu-dropdown__item">
+                                        item 3
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="btn-link" href="">
+                                Xem tất cả
+                            </a>
+                        </div>
+                        <div class="title">Album ảnh</div>
+                    </div>
+                </div>
+                <div class="contents-item">
+                    <div class="list-sercives">
+                        <div class="list-item">
+                            <div class="list-item__img">
+                                <img src="https://images.pexels.com/photos/139829/pexels-photo-139829.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div class="list-item__img">
+                                <img src="https://images.pexels.com/photos/139829/pexels-photo-139829.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div class="list-item__img">
+                                <img src="https://images.pexels.com/photos/139829/pexels-photo-139829.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                            </div>
+                        </div><div class="list-item">
+                            <div class="list-item__img">
+                                <img src="https://images.pexels.com/photos/139829/pexels-photo-139829.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="services-item">
+                <div class="title-context right">
+                    <div class="content">
+                        <div class="icon"></div>
+                        <div class="title ml-3">Blog</div>
+                        <div class="control-album">
+                            <div class="btn-show show-album">
+                                <label for="menudrop-3">
+                                    Danh mục
+                                </label>
+                                <input type="checkbox" name="" hidden class="menudrop" id="menudrop-3">
+                                <div class="menu-dropdown">
+                                    <div class="menu-dropdown__item">
+                                        item 1
+                                    </div>
+                                    <div class="menu-dropdown__item">
+                                        item 2
+                                    </div>
+                                    <div class="menu-dropdown__item">
+                                        item 3
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="btn-link" href="">
+                                Xem tất cả
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contents-item">
+                    <div class="list-blog">
+                        <div class="blog-item">
+                            <div class="blog-item__img">
+                                <img src="https://images.pexels.com/photos/265667/pexels-photo-265667.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                            </div>
+                            <div class="blog-item__info">
+                                <div class="title">Title</div>
+                                <div class="text">text content...</div>
+                            </div>
+                        </div>
+                        <div class="blog-item">
+                            <div class="blog-item__img">
+                                <img src="https://images.pexels.com/photos/1181449/pexels-photo-1181449.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                            </div>
+                            <div class="blog-item__info">
+                                <div class="title"> Lorem Ipsum has been the industry's standard</div>
+                                <div class="text">is simply dummy text of the printing and typesetting industry. Lorem Ipsum</div>
+                            </div>
+                        </div>
+                        <div class="blog-item">
+                            <div class="blog-item__img">
+                                <img src="https://images.pexels.com/photos/574069/pexels-photo-574069.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                            </div>
+                            <div class="blog-item__info">
+                                <div class="title">Title</div>
+                                <div class="text">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
