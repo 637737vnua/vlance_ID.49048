@@ -25,6 +25,6 @@
     $('.number-bank .btn-copy').click(function(){
       const icon = this.lastElementChild;
       const text = this.parentElement.innerText.split(' ');
-      copyToClipboard(text[1], icon);
+      copyToClipboard(text[1].trim(), icon);
     });
 })()
